@@ -6,7 +6,7 @@
 <title>
 Musical Instruments
 </title>
-<link rel="stylesheet" type="text/css" href="css sheet.css"> 
+<link rel="stylesheet" type="text/css" href="css sheet2.css"> 
 <link rel="shortcut icon" type="image/png" href="favicon.png">
     </head>
 
@@ -41,7 +41,33 @@ Musical Instruments
 </p>
   <p>The flute dates back to almost 50,000 years ago and recent discovery shows that they found a flute from Eastern Europe believed to be between 35,000 and 50,000 years old made of cave bear bone. Other ancient flutes show that there were flutes made from hollow bird bones. The Clarinet however was invented by Johann Christoph Denner of Germany and his son. The Clarinet underwent changes from 1700s to the 1800s during those years the Clarinet followed the flute’s fingering system and during those years the people also played with the with different tone holes and made adjustments to the keys in order to alter the pitch. The Saxophone however ie very iconic especially to Jazz fans throughout the world. This magnificent instrument was invented by Adolphe Sax, who also introduced it to the French military band in 1845. It is one of the youngest instruments today and was inspired by instruments like the flute, clarinet, and the french horn. 
 </p>
-
+        
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="woodwind1.jpg" style="width:100%;">
+    <div class="text">Different Kinds of Woodwind Instruments</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="woodwind2.jpg" style="width:100%">
+    <div class="text">A clarinet</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="woodwind3.png" style="width:100%">
+    <div class="text">A set of reed pipes</div>
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+    </div>
 <div class="footer">
   Empowerment Technologies Final Project, Group 8
   </div>
@@ -58,6 +84,33 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
+}
+        
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
 }
 </script>
 

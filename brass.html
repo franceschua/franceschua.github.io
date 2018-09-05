@@ -6,7 +6,7 @@
 <title>
 Musical Instruments
 </title>
-<link rel="stylesheet" type="text/css" href="css sheet.css"> 
+<link rel="stylesheet" type="text/css" href="css sheet2.css"> 
     <link rel="shortcut icon" type="image/png" href="favicon.png">
 </head>
 
@@ -41,6 +41,33 @@ Musical Instruments
         </p>
 <p>	The earliest instruments or relatives of the brass family were made of either bronze, silver, or even wood. Some examples would be the salpinx found in Greece, and the Roman tuba, lituus, and buccina. During the Renaissance period many advancements were made, during the 1400-1413 the earliest known S-shaped trumpet was developed, which was later followed by the folded trumpet and slide trumpet. It was also during the 1450 wherein the trombone was developed. During this era the new slide system was also further improved and designed to improve the musician’s technique. Fast forward to the 17th century and the brass family again made further improvements and developments. The design was further improved and the valve had some tweaks here and there to better function the upper overtones. The years after that came after all have been significant to what the brass family is right now and it still continues to become better as it is being improved daily.
         </p>
+        
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="brass1.png" style="width:100%;">
+    <div class="text">Different Kinds of Brass Instruments</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="brass2.png" style="width:100%">
+    <div class="text">A french horn</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="brass3.jpg" style="width:100%">
+    <div class="text">A saxophone</div>
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>    
+        
 </div>
 
 <div class="footer">
@@ -60,6 +87,33 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+        
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}   
 </script>
 
 </body>

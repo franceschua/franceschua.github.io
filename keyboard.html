@@ -6,7 +6,7 @@
 <title>
 Musical Instruments
 </title>
-<link rel="stylesheet" type="text/css" href="css sheet.css"> 
+<link rel="stylesheet" type="text/css" href="css sheet2.css"> 
 <link rel="shortcut icon" type="image/png" href="favicon.png">
     </head>
 
@@ -41,7 +41,33 @@ Musical Instruments
 </p>
   <p>The keyboard family specifically the piano includes parts such as the keyboard, tuning pins, hammers, soundboard, treble strings, cast iron plate, and the bass strings.  The keyboard instrument gets it sounds from striking, plucking, and by using air. It is essentially a mixture of the strings family, the percussion family, and the woodwinds.
 </p>
- 
+        
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="keyboard1.jpg" style="width:100%;">
+    <div class="text">Different Kinds of Keyboard Instruments</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="keyboard2.png" style="width:100%">
+    <div class="text">A piano</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="keyboard3.jpg" style="width:100%">
+    <div class="text">An organ</div>
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>    
+        
 </div>
 
 <div class="footer">
@@ -61,6 +87,34 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+        
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}   
+        
 </script>
 
 </body>

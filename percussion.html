@@ -6,7 +6,7 @@
 <title>
 Musical Instruments
 </title>
-<link rel="stylesheet" type="text/css" href="css sheet.css"> 
+<link rel="stylesheet" type="text/css" href="css sheet2.css"> 
 <link rel="shortcut icon" type="image/png" href="favicon.png">
     </head>
 
@@ -41,6 +41,31 @@ Musical Instruments
 </p>
   <p>The percussion family can be classified into the Idiophone wherein it is hit to make vibrations which in turn into sounds and the membranophone that is stretched to make vibrations that make sounds too. Although the drums are included in the list of instruments that are unpitched, they can however still change its tune just by adjusting the tightness of the drum. The tighter the adjustment the higher the note produced. Size also matters as the bigger the size of the drum it is the lower the note produced. Percussion instruments can also change its sound by using different kinds of beaters used to hit it.
 </p>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="percussion1.png" style="width:100%;">
+    <div class="text">Different Kinds of Percussion Instruments</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="percussion2.jpg" style="width:100%">
+    <div class="text">A drumset</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="percussion3.jpg" style="width:100%">
+    <div class="text">A xylophone</div>
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>    
         
 </div>
 
@@ -61,6 +86,33 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+        
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}   
 </script>
 
 </body>
