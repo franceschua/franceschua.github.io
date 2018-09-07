@@ -164,25 +164,6 @@ p {
 	padding: 20px;
 }
 
-img {
-	width:200px;
-	height:200px;
-	border-radius: 25%;
-	z-index: -1;
-	border: #e5e4e2 double 5px;
-	filter: grayscale(75%);
-}
-
-img:hover {
-	border-radius:50%;
-	-webkit-transition: all 0.5s ease-in-out;
--moz-transition: all 0.5s ease-in-out;
--o-transition: all 0.5s ease-in-out;
--ms-transition: all 0.5s ease-in-out;
-transition: all 0.5s ease-in-out;
-filter: grayscale(0%);
-}
-
 h3 {
 	font-size: 30px;
 	letter-spacing: 1px;
@@ -225,13 +206,13 @@ span {
 	border-right: 5px double;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	height: 32px;
+	height: 60px;
 	font-size: 18px;
 	padding-top: 5px;
 }
 
 .footer:hover {
-    height: 60px;
+    height: 120px;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -247,6 +228,7 @@ h6 {
     position: relative;
     top:-31px;
     font-weight: 300;
+    margin-bottom: 10px;
 }
 
 ::-webkit-scrollbar {
@@ -396,4 +378,27 @@ input[type=submit]:hover {
 	margin: auto;
 	max-width: 700px;
     text-align: center;
+}
+
+.icon{
+	height:50px;
+	width:50px;
+	margin:auto;
+    margin-top: -30px;
+    border-radius: 0%;
+	z-index: -1;
+	border: none;
+	filter: grayscale(0%);
+    margin-left: 10px;
+    margin-right: 10px;
+} 
+
+.icon:hover {
+    	border-radius:0%;
+	-webkit-transition:none;
+-moz-transition: none;
+-o-transition: none;
+-ms-transition: none;
+transition: none;
+filter: grayscale(0%);
 }

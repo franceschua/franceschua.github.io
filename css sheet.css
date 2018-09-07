@@ -136,7 +136,7 @@ transition: all 0.8s ease-out;
 
 .content {
   padding: 16px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 p {
@@ -231,13 +231,13 @@ span {
 	border-right: 5px double;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	height: 32px;
+	height: 60px;
 	font-size: 18px;
 	padding-top: 5px;
 }
 
-.footer:hover {
-    height: 60px;
+.footer:hover, .footer:hover:after {
+    height: 120px;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -253,6 +253,7 @@ h6 {
     position: relative;
     top:-31px;
     font-weight: 300;
+    margin-bottom: 10px;
 }
 
 ::-webkit-scrollbar {
@@ -369,4 +370,26 @@ h6 {
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+.icon{
+	height:50px;
+	width:50px;
+	margin:auto;
+    margin-top: -30px;
+    border-radius: 0%;
+	z-index: -1;
+	border: none;
+	filter: grayscale(0%);
+    margin-left: 10px;
+    margin-right: 10px;
+} 
+
+.icon:hover {
+    	border-radius:0%;
+	-webkit-transition:none;
+-moz-transition: none;
+-o-transition: none;
+-ms-transition: none;
+transition: none;
+filter: grayscale(0%);
 }
