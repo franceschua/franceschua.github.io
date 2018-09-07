@@ -183,6 +183,12 @@ transition: all 0.5s ease-in-out;
 filter: grayscale(0%);
 }
 
+h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
 h3 {
 	font-size: 30px;
 	letter-spacing: 1px;
@@ -199,6 +205,12 @@ h4 {
     font-weight: 300;
 }
 
+h5 {
+    margin-top: 0px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+}
 span {
     border-bottom: 1px #0C090A solid;
 }
@@ -222,6 +234,25 @@ span {
 	height: 32px;
 	font-size: 18px;
 	padding-top: 5px;
+}
+
+.footer:hover {
+    height: 60px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.85;
+}
+
+h6 {
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    position: relative;
+    top:-31px;
+    font-weight: 300;
 }
 
 ::-webkit-scrollbar {
