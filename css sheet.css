@@ -236,7 +236,7 @@ span {
 	padding-top: 5px;
 }
 
-.footer:hover, .footer:hover:after {
+.footer:hover {
     height: 120px;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -244,6 +244,7 @@ span {
     -ms-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     opacity: 0.85;
+    overflow: auto;
 }
 
 h6 {
@@ -374,7 +375,6 @@ h6 {
 .icon{
 	height:50px;
 	width:50px;
-	margin:auto;
     margin-top: -30px;
     border-radius: 0%;
 	z-index: -1;
