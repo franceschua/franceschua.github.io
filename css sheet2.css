@@ -213,7 +213,6 @@ span {
     -ms-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     opacity: 0.85;
-    overflow: auto;
 }
 
 h6 {
