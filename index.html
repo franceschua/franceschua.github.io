@@ -1,85 +1,570 @@
-<!doctype html>
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Euphoria+Script&display=swap' rel='stylesheet' type='text/css'>
 
-<html lang="en"> 
+<html>
 
-<head>
-<title>
-Musical Instruments
-</title>
-<link rel="stylesheet" type="text/css" href="css sheet.css"> 
-<link rel="shortcut icon" type="image/png" href="favicon.png">
-</head>
+<style>
 
-<body>
-
-<div class="header" style="height:510px;">
-    </br>
-    </br>
-    <h1>Musical Instruments</h1>
-    <h2>learn about the instrument families</h2>
-</div>
-
-<div id="topnav">
-  <a class="active" href="index.html">Home</a>
-    <div class="dropdown">
-	<a class="dropbtn">Instrument Families</a>
-    <div class="dropdown-content">
-      <a href="percussion.html">Percussion</a>
-      <a href="string.html">String</a>
-      <a href="woodwind.html">Woodwind</a>
-	  <a href="brass.html">Brass</a>
-	  <a href="keyboard.html">Keyboard</a>
-	  </div>
-</div>
-    <a href="team profile.html" style="float:right">Team Profile</a>
-	  <a href="FAQs.html" style="float:right">FAQs</a>
-	</div>
-
-	<div class="content">
-  <h3>Welcome</h3>
-  
-  <div class="row">
-  <div class="column" style="margin-right:20px;">
-<img src="poster.png" style="border-radius: 5px; width: 100%; height: 100%; filter: grayscale(20%);">
- </div>
- <div class="column" style="margin-left:20px;">
-   <p>Music is beautiful. Instruments are one of the things that help in creating music other than the voice and lyrics in this world. Thus we, Gio, Frances, Franc and Gian were inspired to create this website about the the different families of musical instruments. We want other people to learn more about the families and help them gain more knowledge about music.
-     </p>
-   <p>There are people out there in the world that have no clue about the differences of each instrument family. Instruments are like humans in terms of traits. All are distinct with unique properties and characteristics. So, we wish to help others be familliarized with them and, in turn, come to appreciate them as well.
-     </p>
-   <p>We, the creators, hope that you find this website helpful in discovering and learning more about musical instruments. We had a wonderful time creating this site. There were a lot of sleepless night, cups of coffee, and cursing involved in the making of this project.</p>
- </div>
- </div>
-        
-</div>
-
-<div class="footer">
-  Empowerment Technologies Final Project, Group 8
-      <a href="contact us.html" style="color: rosybrown;"><h6>contact us</h6></a>
-    <a href="https://www.facebook.com/francesandreachua"><img src="facebook.png" class="icon"></a></img>
-    <a href="https://www.instagram.com/wellfacu/"><img src="instagram.png" class="icon"></a></img>
-    <a href="https://twitter.com/fraaaaance_chua"><img src="twitter.png" class="icon"></a></img>
-    <a href="https://www.facebook.com/GianAleksei"><img src="facebook.png" class="icon"></a></img>
-    <a href="https://www.instagram.com/gian_aleksei/"><img src="instagram.png" class="icon"></a></img>
-    <a href="https://twitter.com/GianAleksei"><img src="twitter.png" class="icon"></a></img>
-    <a href="https://www.facebook.com/profile.php?id=100010015207461"><img src="facebook.png" class="icon"></a></img>
-    <a href="https://www.instagram.com/lmagpayo15/"><img src="instagram.png" class="icon"></a></img>
-    <a href="https://twitter.com/Gio_T29"><img src="twitter.png" class="icon"></a></img>
-  </div>
-	<script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("topnav");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
+::-webkit-scrollbar {
+width: 1px;
 }
-</script>
+::-webkit-scrollbar-track-piece { 
+display:none;
+}
+::-webkit-scrollbar-thumb:vertical {
+display: none;
+}   
+    
+body{
+cursor: url(http://33.media.tumblr.com/tumblr_lqs4qdUu8n1qfoi4t.png), auto;
+background-color:#000000;
+background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/Hnd01gaCiu89hpk4/videoblocks-the-night-sky-with-stars-and-elements-of-constellations-cinematic-plexus-background-seamless-loop_baxkvswvsf_thumbnail-full01.png');
+background-size: 80%;
+background-attachment: fixed;
+}
 
-</body>
+#bigbox{
+font-family: 'Quicksand', sans-serif;
+font-size:10px;
+position: fixed;
+top: 17%;
+left: 25%;
+z-index:99999;
+outline:1px solid #8095a1;
+height:540px;
+width:404px;
+padding:18px;
+overflow:auto;
+color:#000;
+background-color: #afc3d5;;
+border: 6px solid #798d9d;
+overflow-x: hidden;
+text-align: justify;
+}
+
+.dy{
+font-family: 'Quicksand', sans-serif;
+z-index:99999;
+text-align:center;
+margin-bottom:2px;
+display:inline-block;
+text-transform:lowercase;
+width:60px;
+height:24px;
+padding:4px;
+letter-spacing:2px;
+text-align: center;
+color: #111;
+font-size:18px;
+border: 2px solid #fff;
+}
+    
+.dy:hover {
+border: 2px solid #eef1f4;
+color: #fff;
+background-color: #c0c0c0;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+
+#itbeme {
+position: fixed;
+top: 3%;
+left: 8%;
+height: 682px;
+width: 235px;
+background-color: #afc3d5;;
+border: 6px solid #798d9d;
+}
+
+#pictureko {
+position:relative;
+top: 50px;
+width: 160px;
+height: 160px;
+border: 1px solid #fff;
+background-color: #afc3d5;
+}   
+
+#pictureko img{
+height: 150px;
+width:150px;
+margin-left:5px;
+margin-right:5px;
+margin-top:5px;
+margin-bottom:5px;
+}     
+
+h1 {
+width: 100%;
+font-family: 'Euphoria Script', cursive;
+text-transform: lowercase;
+text-align:center;
+border-bottom-style: double;
+border-bottom-color: #fff;
+color: #fff;
+font-size: 30px;
+}    
+ 
+h2 {
+width: 100%;
+font-family: 'Euphoria Script', cursive;
+text-align:center;
+color: #fff;
+font-size: 25px;
+}        
+
+h3 {
+font-size: 12px;
+color:#fff;
+font-family: 'Quicksand', sans-serif;
+position:relative;
+top:-15px;
+margin-bottom: -8px;
+text-align:center;
+}
+
+#column1 {
+position: fixed;
+left:55.5%;
+height: 705px;
+width: 180px;
+top:3%;
+overflow-x: hidden;
+}
+
+#column2 {
+position: fixed;
+left:68%;
+height: 705px;
+width: 180px;
+top:3%;
+overflow-x: hidden;
+}
+
+#column1box {
+position:relative;
+border: 2px solid #789d9d;
+background-color: #afc3d5;
+margin-bottom: 10px;
+}
+
+#column1box img {
+margin-top: 10px;
+margin-bottom: 10px;
+width:160px;
+}
+
+#column1box:hover {
+-webkit-transition: all 0.7s ease;
+-moz-transition: all 0.7s ease;
+-o-transition: all 0.7s ease;
+background-color: #c0c0c0;
+border-color: #cccccc;
+}
+
+
+</style>
+    
+<body>
+<div id="container">
+<div style="position:fixed;left:25%;top:3%;z-index:99999;">
+ <span class="dy" style="background:#798d9d;" onMouseover=++"cursor:pointer';" onClick="changeNavigation ('tab1')">1</span>
+ <span class="dy" style="background:#8497a8;" onMouseover=++"cursor:pointer';" onClick="changeNavigation ('tab2')">2</span>
+ <span class="dy" style="background:#8ea2b3;" onMouseover=++"cursor:pointer';" onClick="changeNavigation ('tab3')">3</span>
+ <span class="dy" style="background:#99adbe;" onMouseover=++"cursor:pointer';" onClick="changeNavigation ('tab4')">4</span>
+ <span class="dy" style="background:#a4b8c9;" onMouseover=++"cursor:pointer';" onClick="changeNavigation ('tab5')">5</span>
+ <span class="dy" style="background:#afc3d5;" onMouseover=++"cursor:pointer';" onClick="changeNavigation ('tab6')">6</span> </div>
+<div style="position:fixed;left:25%;top:10%;z-index:99999;">
+ <span class="dy" style="background:#8497a8;" onMouseover=++"cursor:pointer';" onClick="changeNavigation ('tab7')">7</span>
+ <span class="dy" style="background:#8ea2b3;" onMouseover=++"cursor:pointer';" onClick="changeNavigation ('tab8')">8</span>
+ <span class="dy" style="background:#99adbe;" onMouseover=++"cursor:pointer';" onClick="changeNavigation ('tab9')">9</span>
+ <span class="dy" style="background:#a4b8c9;" onMouseover=++"cursor:pointer';" onClick="changeNavigation ('tab10')">10</span>
+ <span class="dy" style="background:#afc3d5;" onMouseover=++"cursor:pointer';" onClick="changeNavigation ('tab11')">11</span>
+ <span class="dy" style="background:#bacee0;" onMouseover=++"cursor:pointer';" onClick="changeNavigation ('tab12')">12</span>
+</div>
+</div>
+
+<div id="bigbox">
+<h1>Digital Scrapbook</h1><br>
+hello! Click on the number tabs above to navigate through my digital scrapbook! :^)
+</div>
+
+
+<script>function changeNavigation(id) {document.getElementById('bigbox').innerHTML=document.getElementById(id).innerHTML}</script> 
+
+<div id="tab1" style="display:none">
+<h1>my childhood years</h1>
+<br>
+I don't really remember much from my childhood years besides the fact that I was constantly in the honor roll. My parents were strict with my academics so I spent more time studying than playing with other children my age. There were several times when I would throw tantrums because I wanted to <i>play</i>, and not do my homeworks. I'd be met with a clothes hanger at home or a belt, but y'know, it be like that sometimes.<br>
+My mom has a large circle of friends, so, every few months, I find myself becoming a flower girl for weddings of people I didn't even know. It was kinda a bummer but with every wedding, there was food involved, so... I guess it was okay.<br> I really had no issues back then aside from the much too strict parenting I experienced, which became a major reason why I'm the way I am now.
+<div id="column1">
+<center><div id="column1box"><img src="https://scontent.fmnl10-1.fna.fbcdn.net/v/t35.18174-12/13035586_635823243252256_1211959262_o.jpg?_nc_cat=108&_nc_oc=AQlGHxg9UCLty5_13G23JwV4LZV3G2oIR0AK87Ls37ZqZ_Woi7bLR92VjoB4QXB7CIU&_nc_ht=scontent.fmnl10-1.fna&oh=2029206a1e288fe940a2f0bdf3137b94&oe=5D54E96D" style="height:144px;">
+<h3>me and my sister</h3>
+</div>
+<div id="column1box"><img src="https://scontent.fmnl10-1.fna.fbcdn.net/v/t35.18174-12/13035631_635796839921563_1916070325_o.jpg?_nc_cat=110&_nc_oc=AQkK_ATxgy5Cx24FTOxiZSdIAgx1Vf1_rMUosi0evlWMrIdxyHSoqRq6m3tYoGuBBc8&_nc_ht=scontent.fmnl10-1.fna&oh=954177bef76e9d56dc21208c5c45ec8e&oe=5D55347D" style="height:220px;">
+<h3>i was cute then</h3>
+</div>
+<div id="column1box"><img src="https://scontent.fmnl10-1.fna.fbcdn.net/v/t35.18174-12/13073163_635796846588229_1813359283_o.jpg?_nc_cat=102&_nc_oc=AQkflxnlTJ6CBAvrjl4LmLFFKyzzSFjJPgwsDiP2e7-oHxG6FAoYxA_KutWrlvq0DvU&_nc_ht=scontent.fmnl10-1.fna&oh=3466d7a0b2d2bf9e95d89f7d98a39d9f&oe=5D5540AA" style="height:180px;">
+<h3>i am a flower girl</h3>
+</div>
+</center>
+</div>
+
+<div id="column2">
+<center><div id="column1box"><img src="https://scontent.fmnl10-1.fna.fbcdn.net/v/t35.18174-12/13062556_635796823254898_1081155632_o.jpg?_nc_cat=105&_nc_oc=AQniHCa2F1G3gYYNutQ3V7rGiMjzI15FTzYoUbilT6RmCNhlTZbnJkSGu2zWsiG-Fp8&_nc_ht=scontent.fmnl10-1.fna&oh=85b2d9545193d43d7da8c98a0bb32927&oe=5D55288A" style="height:210px;">
+<h3>cringey me</h3>
+</div>
+<div id="column1box"><img src="https://scontent.fmnl10-1.fna.fbcdn.net/v/t35.18174-12/13078349_635824443252136_946838927_o.jpg?_nc_cat=109&_nc_oc=AQm_AnfSJSLDpo3PqsTkJdecIGzQWoDt7Ujhzlm3F3D9mV7fHTcc4W1cGNkNo-OF8lw&_nc_ht=scontent.fmnl10-1.fna&oh=dc1475e4cf8edb38d8138bc6bdb0c1ab&oe=5D54D862" style="height:180px;">
+<h3>me as an angel</h3>
+</div>
+<div id="column1box"><img src="https://scontent.fmnl10-1.fna.fbcdn.net/v/t1.15752-9/58694133_351907358783907_181860941221068800_n.jpg?_nc_cat=108&_nc_oc=AQm25kUnh1-bXHEp3V-3_0ruCJh00Rkz4vZBjcmvWeK_5ED-QBujNU8YiqwF7mVMmSs&_nc_ht=scontent.fmnl10-1.fna&oh=6dc8f4567e60d6d713879327112a3f67&oe=5DDF0566" style="height:154px;">
+<h3>me and my (other) sister</h3>
+</div>
+</center>
+ </div>
+</div>
+
+<div id="tab2" style="display:none">
+<h1>my adolescent years</h1>
+<br>
+This was the time when issues caused by the childhood I had finally surfaced. I had the freedom that I never had when I was younger. As expected, I went all out. I was going out with my friends every week, <i>galang gala</i> my parents would say. My academics were slipping, and there was a time I was kicked off the volleyball time because of them, which was perfectly fine for me, smh. I didn't want to study, I didn't want to attend extra-curricular activites, I just wanted to have a good time. <br> Come grade eight, I was doing alright. During first and second term, I was receiving high marks and grades. In third term, however, I think I flipped a switch. Suddenly I wasn't doing good and I had massive depression. But yeah, it be like that sometimes. I failed chemistry, physics, and math that year (but my grades during the first half of the school year were high enought for me to pass, thank god).<br>
+Grade nine, I was gaining weight, probably from all the stress from the previous years. I grew self-conscious but I shifted my attention to academics instead of my appearance. I was constantly on top of my class.<br>In grade 10, I really don't know what happened. I sort of just went with the flow of things, so, whatever happened happened. Still, I kept my grades up, but they began to slip by the last term.
+<div id="column1">
+<center>
+<div id="column1box"><img src="https://i.imgur.com/Wt7Vb7J.jpg" style="height:100px;">
+<h3>attending fellowship</h3>
+</div>
+<div id="column1box"><img src="https://i.imgur.com/Kti47Lq.jpg" style="height:224px;">
+<h3>feeling good abt myself</h3>
+</div>
+<div id="column1box"><img src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t1.0-9/12042693_610085992492648_4844065783205499888_n.jpg?_nc_cat=109&_nc_eui2=AeFtHO4Aczb7c9RtbZdKWoDsWOIwVM8owwaPWybvabT5OX7ilL9sswUBKkQ_CGGfYWoKAvMwAjlCiEvYCERCntZqmCbcrWMiika1an9k_zZPJg&_nc_oc=AQkgI1UFUHgzLxMg_2pc6f3y8vshocvSCScWYagUDCf7-Bm3z50ws4WYbpuXdK1Iclc&_nc_ht=scontent.fmnl4-4.fna&oh=867fd004304359d706a954c6f82a027e&oe=5DDDA925" style="height:220px;">
+<h3>fieldtrip selfie</h3>
+</div>
+</center>
+</div>
+
+<div id="column2">
+<center><div id="column1box"><img src="https://i.imgur.com/VbeK7u0.jpg" style="height:215px;">
+<h3>i am a witch</h3>
+</div>
+<div id="column1box"><img src="https://scontent.fmnl10-1.fna.fbcdn.net/v/t1.15752-9/52854051_255418748724185_3647647387268153344_n.jpg?_nc_cat=101&_nc_oc=AQlUQCl6w0Yd28iMR0ru4TUuQmB1Y8walAkK57Vnl1AMECdygBzX3fBzPmaWw14AiwU&_nc_ht=scontent.fmnl10-1.fna&oh=a0f63ed5fc0b9cb36be89c9639a8d937&oe=5E152A50" style="height:165px;">
+<h3>JHS squad yay</h3>
+</div>
+<div id="column1box"><img src="https://scontent.fmnl10-1.fna.fbcdn.net/v/t34.18173-12/12968669_628626537305260_882410212_n.jpg?_nc_cat=103&_nc_oc=AQkqd-4s4I2yGkKuybnf0LIgubUpLYK5u80LSmu_8w2TL8HJpNyW1wlmzaXGzJPXDf0&_nc_ht=scontent.fmnl10-1.fna&oh=da940b6aa5727be0d23f79b1b73bdfa3&oe=5D553ED1" style="height:164px;">
+<h3>vball team</h3>
+</div>
+</center>
+ </div>
+</div>
+
+<div id="tab3" style="display:none">
+<h1>my personality</h1>
+<br>
+To be honest, I don't know my personality as much as my friends do. I know that I can be very annoying at times (if not all the time, lmaooo) and weird. There are bouts when I just suddenly feel like pissing someone off or fight with someone (banggaan ng balikat sa CADS tara). I am sometimes chill, I am sometimes hardcore. My personality is a roulette wheel even I'm not sure of, smh. My friends say that it's like I'm under the influence of drugs half the time they interact with me (ha, shabu pa more). Sometimes, I can tolerate others' stupidity but sometimes I get so angry, like Frances <i>chill</i> ha. I don't know myself that much.
+<div id="column1">
+<center><div id="column1box"><img src="https://i.imgur.com/PihfWjx.jpg" style="height:194px;">
+<h3>chOKleT</h3>
+</div>
+<div id="column1box"><img src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t1.15752-9/67757361_946313869066785_9139441701511757824_n.jpg?_nc_cat=103&_nc_eui2=AeEFDrEJMjH2Vzvoq4W_7sK4V-eJdK5_iQ3QF3UPhvNqsYAqZVCP1luFRMQm6AyicHTr2KVnsSJLtpBqx4KmPhjDgzVgXDbZcKCVMxIEKJemmw&_nc_oc=AQl8zPZxm5OGVBlGm_Qlp2fC0MLuvR6Kbla628woycaQYRmvznIbYSuQIXxpSmKCfu8&_nc_ht=scontent.fmnl4-5.fna&oh=b27c7657ba5d219a6ec19402c8e56c83&oe=5DD50569" style="height:220px;">
+<h3>i am a meme</h3>
+</div>
+<div id="column1box"><img src="https://i.imgur.com/22oxVOH.jpg" style="height:130px;">
+<h3>i am high 24/7</h3>
+</div>
+</center>
+</div>
+
+<div id="column2">
+<center><div id="column1box"><img src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.15752-9/67682033_391685421489415_1243222144033226752_n.jpg?_nc_cat=110&_nc_eui2=AeH3v9RbFcsFRGxgcfw_zLDTU5zJF-HmplgxWykJn2TbHx5oifPgEdZCJaxXq014oNWgtu94wtj6PfWV823qoq9XXFmg8gqj254ZPtVsOq0fwg&_nc_oc=AQk-i6BretvV01Ghfp1aWK_AUlRb34niH0jyLQ-1s5dah_E5CNFv2_x37GJVELlR2h8&_nc_ht=scontent.fmnl4-3.fna&oh=fa5e1b464bb1f7d4e597bdddc42690ff&oe=5E1470DD" style="height:120px;">
+<h3>i am a meme (1)</h3>
+</div>
+<div id="column1box"><img src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.15752-9/55919101_308517090047200_3537776076522520576_n.jpg?_nc_cat=107&_nc_eui2=AeGf_v0GLPTGyZDSVVHKg2s4kPO-OBX-h3LuYgLoao1DDoNWB_1Hxxah7bpgXnvCm8j06LW2S1iz665LiWYJQOQjpt8mzXXafET2Y4joqmMGcQ&_nc_oc=AQkvOqul8QFot-wQGxTAsLgWmcfDbWu4rJfDdrQ-4S0uwc01lPBXrGQ8CKbj08GPPQY&_nc_ht=scontent.fmnl4-6.fna&oh=b8f16cb41515cd8cb2ecd836ffdd6622&oe=5DDDA979" style="height:250px;">
+<h3>a cute meme</h3>
+</div>
+<div id="column1box"><img src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t1.15752-9/67639333_400321427252347_679631110908411904_n.jpg?_nc_cat=102&_nc_eui2=AeEy2CDrxO6-jdp4uqr9O6ZnxpLK7Mafy_yemN-soLxAsIGKUQHvaPJ7KciXIXdI6TNljqLOEn3qHELhQ6bSt9OmwVC5WJ63HEIMDZ9ZnkPCOA&_nc_oc=AQlojpjWARfCTB7Ou_kHatSuh34VmMxUX0sx_NIrjyCLa1PYocqGBxrwC60xukezgrU&_nc_ht=scontent.fmnl4-4.fna&oh=00182b4676f9def06094f02ba33fdeb8&oe=5DCFF9F6" style="height:174px;">
+<h3>a grumpy meme</h3>
+</div>
+</center>
+ </div>
+</div>
+
+<div id="tab4" style="display:none">
+<h1>my body</h1>
+<br>
+Oh boy here we goooo. When I was still in the volleyball team, my team mates would often point out that I needed to drop some weight. I was by no means fat, I was actually quite fit then, but the sport required us to be in the best shape. My metabolism was w a c k then, I needed to eat a lot to be able to do the activities in training, otherwise I'd collapse.<br>
+In grade eight, I was the fittest in my batch. I had a slightly muscular build from all the training and work outs but I still had my baby fat. Post-depression me gained a lot of weight, and it didn't help that I quit the volleyball team as well, so there was no way for me to balance out what I ate with exercise. <br>
+In grade nine, I was what people considered fat. I had to buy a whole new set of uniforms because my oldest ones no longer fit me. I was conscious about my body then, but I didn't allow negative thoughts to linger for long.<br>
+Come grade 10, my parents started telling me to lose weight, to go to the gym or start eating less. I obviously ignored them, but their complaints were frequent to get under my skin.<br>
+In grade 11, I was too self-consious about my body to allow myself to attend prom. I told my classmates that my mom didn't allow me to go so they wouldn't know the real reason, still, I went to Makati Shang during prom day if only to spend time with them. I wore a cute casual dress and thought that I looked good. It was the first step of me coming to love my body.<br>
+ Now that I'm in grade 12, there are still thoughts in my head that are like <i>"lose weight", "you're fat", "too ugly",</i> etc. I still manage to take selfies during the times I felt good about myself or whenever I felt <i>cute</i> or <i>pretty</i>. Yay for self-love.
+<div id="column1">
+<center><div id="column1box"><img src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t1.0-9/11150461_496287233872525_2412091552143945451_n.jpg?_nc_cat=102&_nc_eui2=AeHwuD7ou3sTl07zdJz4kl4htwuTtyKoJ4cQfslGlArkKbe3txFTYbd7hWO7Yukuf-acztNvlz611hhlTKRi9bXiK4rfCSrpHvVFvtmTTY9JhA&_nc_oc=AQnNVWrTKyKQmYuvR5Ya3GPyWpHVhNS0nuQNr8GXI5BnzqEE1XpsSbDgUzNhb_v-fMY&_nc_ht=scontent.fmnl4-4.fna&oh=ce0c7c30d1701b7dc4679013259ae90b&oe=5DCED878" style="height:175px;">
+<h3>me before grade 8</h3>
+</div>
+<div id="column1box"><img src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.0-9/12795346_610054702495777_7161226883606127775_n.jpg?_nc_cat=110&_nc_eui2=AeGdFH8ahTDPg2Fof_iyc6SxEWJ4SAf1oCrDXBs54kZKfK9pjVUZybCVOc2DFnMI5BJUYiQAV5YHB0BV18pgW79Gxv5VQ2tn87ozB4fWn1O1Ug&_nc_oc=AQnrMOb8bHWUVGKfGthT_kTyqy5TQ-WX7kT0SscbgIka5rIcPCZQhut9AIaQT-gL_p4&_nc_ht=scontent.fmnl4-3.fna&oh=daf3db691c81df2f0aa9a22dc7ff42ea&oe=5DE532FD" style="height:155px;">
+<h3>grade 8 me</h3>
+</div>
+<div id="column1box"><img src="https://i.imgur.com/XBAhx3C.jpg" style="height:214px;">
+<h3>grade 8 me goin swimmin'</h3>
+</div>
+</center>
+</div>
+
+
+<div id="column2">
+<center><div id="column1box"><img src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.0-9/35771098_1074822596018983_8845609232012148736_n.jpg?_nc_cat=111&_nc_eui2=AeHQ2u2mIaLPwBDq_eAspYOdXz8o3uqMVtfjOI2-23tuTWHIiPJ5lgRXS0FZvrsejLi_vqvRfO58y-K6gHKgaz472iA7-vdLVE6lf00-sB-orQ&_nc_oc=AQnx9wr2u4E74HvpnwwIEvjAzOpklqRxhifhhA4wNzglovKmmmumozaqZextH0cyIFs&_nc_ht=scontent.fmnl4-6.fna&oh=40551fde63c717e23a2bde9e30f8fd77&oe=5DCA7227" style="height:160px;">
+<h3>me during grade 10</h3>
+</div>
+<div id="column1box"><img src="https://i.imgur.com/TGArGVO.jpg?1" style="height:100px;">
+<h3>me just two weeks ago</h3>
+</div>
+<div id="column1box"><img src="https://i.imgur.com/HxBnDNV.jpg" style="height:284px;">
+<h3>grade 11 me before prom</h3>
+</div>
+</center>
+ </div>
+</div>
+
+<div id="tab5" style="display:none">
+<h1>my core values</h1>
+<br>
+I value a lot of things after my experiences in junior high school. I've learned the art of loving myself (hidden by my tendency of being self-deprecating) after a tough time of self inflicted scars and prayer. I've learned to let go my past mistakes to make way for more oppurtunies to do better, that I have to keep looking forward, to see the best in whatever situation even if it's nearly impossible.<br>
+I also learned that it's okay to set impossible goals (like me wanting to fling myself to the sun kasi ayoko na mag-aral pero joke lang mga kalahati) to motivate myself. It's never good to ignore your emotions, as I've learned the hard way, as they build up until you can no longer contain them, and they explode, damaging yourself and those around you.<br>
+Also, if you have to do something, be <i> extra as hell</i>, it adds a lot of fun.<br>
+I'm a person that has no initiative to approach others, which makes me a little bit socially awkward, but the willingness to try and get along with others keeps me going.
+<div id="column1">
+<center><div id="column1box"><img src="https://i.pinimg.com/564x/61/6e/36/616e367adc33c689115ec225e8ce6d6f.jpg" style="height:44px;">
+<h3><i>self-love</i></h3>
+</div>
+<div id="column1box"><img src="https://i.pinimg.com/564x/3f/a1/af/3fa1af357c8cfd503bb3635f34e12c8b.jpg" style="height:270px;">
+<h3>accepting to let go</h3>
+</div>
+<div id="column1box"><img src="https://i.pinimg.com/564x/85/8f/14/858f14f6d93cf410b9af56e6594c3bb8.jpg" style="height:137px;">
+<h3>undying optimism</h3>
+</div>
+<div id="column1box"><img src="https://i.pinimg.com/564x/78/4c/a4/784ca40645bf3ad88ff71be6c8087276.jpg" style="height:40px;">
+<h3>reach for the stars</h3>
+</div>
+</center>
+</div>
+
+<div id="column2">
+<center><div id="column1box"><img src="https://i.pinimg.com/564x/89/4c/c0/894cc0911c7dd4dc86d1e374586245fc.jpg" style="height:190px;">
+<h3>acknowledging your emotions</h3>
+</div>
+<div id="column1box"><img src="https://i.pinimg.com/564x/9a/97/6c/9a976cc9fb0b048a443c56dabb7a4f47.jpg" style="height:180px;">
+<h3>go all out or nothing</h3>
+</div>
+<div id="column1box"><img src="https://i.pinimg.com/564x/f2/93/f5/f293f5767dd0d939dd9949bb93da215d.jpg" style="height:174px;">
+<h3>mYES</h3>
+</div>
+</center>
+ </div>
+</div>
+
+<div id="tab6" style="display:none">
+<h1>my likes and dislikes</h1>
+<br>
+I like video games, yay. I started playing league of legends during grade 11 and I mainly played with my classmates then. The game was so addicting that I would frequently stay up every night just to play. Sadly, I never played ranked alone, only norms. I also like playing the sims 4 just to design houses (there's a running joke between friends that I should just become an interior designer with my 100+ hours of experience playing sims, smh). <br>
+I also like cats. Whenever I see a cat, I have the urge to pet them or rub their heads. I've gotten bitten once, and scratched twice, but I have no regrets. <br>
+The things I dislike are mainly the things that inconvenience me, like riding the LRT. It shouldn't be considered as <i>commuting</i>, more like going to war, what with the amount of people and the heat in the Philippines. You come out of your house fresh, you exit the train looking as if you've just gone through hell.<br>
+Also, Isko because I went to school once super early only for him to suspend an hour after class starts, smh.<br>
+And physics because the mental strain is too much, my brain kennat anymore.
+<div id="column1">
+<center><div id="column1box"><img src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.15752-9/53552256_2210575829271599_2891257844911308800_n.jpg?_nc_cat=111&_nc_eui2=AeFnHrUEbK66sEv3HnhVdqTwnnnvVN_PsmN4-WG7Rz7O2PMeVWRWweyfhyUQgqqKzPNvwMLkcfQcdpa9KoCbf39-MShFP5n8WkhciekcJSQCQg&_nc_oc=AQkdFPSYtthw_NuuVhWR6uwpMkVGHz-cV2drXKfNaJDjiKMcYvO9VH1c89Pab5tpNUo&_nc_ht=scontent.fmnl4-6.fna&oh=d938747ceb43faac62b96cbaf37debba&oe=5DC91991" style="height:234px;">
+<h3>I like: League <3</h3>
+</div>
+<div id="column1box"><img src="https://scontent.fmnl10-1.fna.fbcdn.net/v/t1.15752-9/s2048x2048/50497979_368155474001951_5470440651675926528_n.jpg?_nc_cat=105&_nc_oc=AQn_b7mNOOAZfJEv2g9zantSv99GsKV1uRRhk9IhNinzRV6BRPU_vAat5u3zW7nirNs&_nc_ht=scontent.fmnl10-1.fna&oh=33a44af5b22da71cabfce90b8fc86507&oe=5DDC2F68" style="height:200px;">
+<h3>I like: cats</h3>
+</div>
+<div id="column1box"><img src="https://i.imgur.com/bEy2OhY.jpg?1" style="height:110px;">
+<h3>I dislike: physics, yak</h3>
+</div>
+</center>
+</div>
+
+<div id="column2">
+<center><div id="column1box"><img src="https://i.imgur.com/t3ZkRbq.jpg?1" style="height:143px;">
+<h3>I dislike: lrt, isang oras ka na naghihintay tapos panay skip train lang yung dumadaan</h3>
+</div>
+<div id="column1box"><img src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.15752-9/67387194_2397540483907007_3268090570291019776_n.jpg?_nc_cat=101&_nc_eui2=AeH49Uffn3-eXIakbmy0zt2JcdpOz1htiLp_mTpehRbKiYVC32LDGCf9aoad7D4XsUwxhJFHhMjruVUwNLZ1z1AGi7AU5-5kErPAhq-jAoF7sg&_nc_oc=AQmg8dpkij1KKrMFUr2en3SyakXYE_NRliKVY7RpD05qRQwCZWaj67Nk4ucjxXlbNyg&_nc_ht=scontent.fmnl4-2.fna&oh=e75f49415bf7c091fdae5cadd908f161&oe=5DC9F862" style="height:244px;">
+<h3>I like: animusims :></h3>
+</div>
+<div id="column1box"><img src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.15752-9/67403440_329901851247399_4968236551025721344_n.jpg?_nc_cat=108&_nc_eui2=AeEFEG3hTIwd7jRh3QQanX52B1fEyxqOItxx0AsCzpdX3Evxo1SxM1nfecCCjYJHZy1rnImrLu3B0Lv1weQIo4mSc4JG-K5CVvYJYrrSfFur8Q&_nc_oc=AQlWyqNrL26d1UIfNNHySShrIowhWI8qeeSj2lby0CHSlnZkP0atkcN6Kig9s78Iir0&_nc_ht=scontent.fmnl4-6.fna&oh=a4e759caa4b99983b8792c1d072dcc03&oe=5DD85009" style="height:80px;">
+<h3>I dislike: Mayor Isko kasi saksakan ng bagal nya magsuspend ng classes, baha na't lahat lahat wala pa rin smh</h3>
+</div>
+</center>
+ </div>
+</div>
+
+<div id="tab7" style="display:none">
+<h1>my strengths and weaknesses</h1>
+<br>
+These are all patapon strengths, not even gonna lie HAHAHHA. First of all, I can cram because I literally have no sense of urgency and I am extremely lazy (I will procrastinate until I am physically unable to). However, thanks to getting hardly stressed, I am able to carry out my tasks <i> without</i> panicking (like what I'm doing as I write journal entries at the last minute, still finding time to play cards, smh).<br>
+So, I'm pretty sure that my weaknesses far outweigh my strengths, and the only <i> real</i> strength I have is my ability to let go of the past, which has been tested times and times again one bad experience after another.
+<div id="column1">
+<center><div id="column1box"><img src="https://media1.tenor.com/images/250d812cabeff447b95582fd9cc0e199/tenor.gif?itemid=14295956" style="height:124px;">
+<h3>Strength: I can cram</h3>
+</div>
+<div id="column1box"><img src="https://i.imgur.com/Qvd9u4Q.gif?noredirect" style="height:150px;">
+<h3>Weakness: I am lazy</h3>
+</div>
+<div id="column1box"><img src="https://www.mindwell-leeds.org.uk/media/W1siZiIsIjIwMTgvMTAvMDYvMTkvMjEvMjkvN2Q4M2M5YzEtMTVkYi00ZGNiLWEyYjItYWZjMWJiMTMyMGU1L01XX0ljb25zLVN0cmVzcy5wbmciXV0" style="height:157px;">
+<h3>Strength: Hardly stressed</h3>
+</div>
+<div id="column1box"><img src="https://pbs.twimg.com/media/D2EKy0kWsAAQ7qI.jpg" style="height:60px;">
+<h3>Weakness: no sense of urgency</h3>
+</div>
+</center>
+</div>
+
+<div id="column2">
+<center><div id="column1box"><img src="https://i.pinimg.com/564x/ce/24/b4/ce24b4e9ec679019cbc9ab375488f83a.jpg" style="height:200px;">
+<h3>Strength: Faulty optimism</h3>
+</div>
+<div id="column1box"><img src="https://i.pinimg.com/564x/91/b0/83/91b083e1629c9f01957fdb9659c9ae78.jpg" style="height:160px;">
+<h3>Weakness: Easily bored</h3>
+</div>
+<div id="column1box"><img src="https://i.pinimg.com/564x/07/0c/21/070c2193b42fc5a5279c1c7b0361d8a1.jpg" style="height:184px;">
+<h3>Strength: Lets go of the past</h3>
+</div>
+</center>
+ </div>
+</div>
+
+<div id="tab8" style="display:none">
+<h1>my dreams</h1>
+<br>
+During the course of my junior high school career, I wanted to be a lot of things. I wanted to be a doctor because I found it fun doing pretend surgery during that one time we went to dissect a pig's heart. However, that dream was wrecked to pieces after I found out that I had a case of hand tremors.<br>
+We had a creative writing course during grade seven, and I thoroughly enjoyed it, it was a fun way to make use of my imagination and creativity. However, my mom said that there's no money there, so goodbye dreams yet again.<br>
+Come eighth grade, we had journalism to replace creative writing. I really did consider going for Mass Communications for college after that, but decided against it because of my shy nature that time.<br>
+And then I wanted to become an architect after an art class where we were tasked to create our dream homes. My art teacher told me that I should consider becoming an architect, as she could see the potential that I had. I entertained the idea for a while, until I decided that it wasn't for me.<br>
+Now, I'm dead set on becoming a biomedical engineer. However, after seeing that it's a combination of three types of engineering (and possibly more), plus a lot of calculus and physics, I just want to drop out and never bother studying again (ayoko na magaral omg).
+<div id="column1">
+<center><div id="column1box"><img src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t1.0-9/23659354_949778411856736_7019904158890853816_n.jpg?_nc_cat=106&_nc_eui2=AeFBFeXBbaiGKbno3fSdaq36ePRUpUoz9xkgh6X4UxHK0gFgWv-bVdT00LPWStF7D1PxEPJD4cJeWpvL-2qjAasBZf-Vsa8n7HTEF_wY_OWwsw&_nc_oc=AQmG5p6xW2_qFzcghO5DaT95gWNWxOMeumdN7epvl_yBNBTMFY6RR7Lyq1YR0M8Vm8w&_nc_ht=scontent.fmnl4-5.fna&oh=b1ac1bc79244229bf578c40c7e380aa2&oe=5DE0BAA9" style="height:184px;">
+<h3>i wanted to be a doctor</h3>
+</div>
+<div id="column1box"><img src="http://images.onesite.com/profnetconnect.com/user/evelyntipacti/6b0551e821534b9873e9fda62ed2d11c.jpg?v=52600" style="height:190px;">
+<h3>I wanted to be a journalist</h3>
+</div>
+<div id="column1box"><img src="https://d1jqecz1iy566e.cloudfront.net/extralarge/ps039.jpg" style="height:170px;">
+<h3>I wanted to be an architect</h3>
+</div>
+</center>
+</div>
+
+<div id="column2">
+<center><div id="column1box"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Francisco_de_Goya_y_Lucientes_-_Gaspar_Melchor_de_Jovellanos.jpg" style="height:270px;">
+<h3>I wanted to be a writer</h3>
+</div>
+<div id="column1box"><img src="https://careers.dyson.com/media/1554/dyson-careers-engineer-robotics.jpg?center=0.39644970414201186,0.49666666666666665&mode=crop&width=812&height=508&rnd=131819200260000000" style="height:110px;">
+<h3>I want to be an engineer</h3>
+</div>
+<div id="column1box"><img src="https://f4.bcbits.com/img/a3422201891_10.jpg" style="height:164px;">
+<h3>I want to drop out</h3>
+</div>
+</center>
+ </div>
+</div>
+
+<div id="tab9" style="display:none">
+<h1>my fears</h1>
+<br>
+Honestly, I'm scared of change. I've been stuck in one place forfar too long and it's a scary idea not knowing where the next few steps would lead me to. If I were to take a step forward, what if I fall down and never get back up? What if I choose the wrong path, and taking a detour isn't a choice? At the same time, I'm scared of <i>not</i> moving, because others are already chasing after their dreams and aspirations and have a clear direction, whereas I am lost and unable to move forward. Very yikes for me.<br>
+I'm also scared of going back to my habit of self-harming. I've been clean for a couple of months now because of positive encouragement and warm acceptance from my friends. I'm afraid that, after one very bad experience, I'll go back and then I'll have another hard time to stop and get help from others.
+</div>
+
+<div id="tab10" style="display:none">
+<h1>my passion</h1>
+<br>
+ I'm really not sure if all these count as passions but they're the things that I enjoy doing the most. I've always loved reading and writing, as the former brings me to another world, while the latter allows <i>me</i> to create the world. It's something that keeps my imagination going and partly one of the reasons that I'm still sane.<br>
+Sleeping, for the most part, is something I rarely get that chance to enjoy nowadays, as I'm bombarded with projects and whatnots (not like I diligently do them). Listening to music helps me feel calm, and depending on the genre, it boosts my overall mood altogether.<br>
+Also, playing pokemon is here because I raise the members of my pokemon team with love and dedication whil tackling on the objectives of the game.<br>
+Lastly, eating. Yes, eating. So very passionate to eat foods.
+<div id="column1">
+<center><div id="column1box"><img src="https://pa1.narvii.com/6043/3aee3df5c7e413c08033f57fb09894edcf1def1b_hq.gif" style="height:154px;">
+<h3>playing pokemon</h3>
+</div>
+<div id="column1box"><img src="https://media.giphy.com/media/nGtOFccLzujug/giphy.gif" style="height:130px;">
+<h3>writing</h3>
+</div>
+<div id="column1box"><img src="https://3.bp.blogspot.com/-HdL7NzzxvRQ/WrECpC_tA-I/AAAAAAAATxI/UPuGEaD7SoMREB7CAjwbKbbvfyAYd2LeQCLcBGAs/s1600/giphy.gif" style="height:90px;">
+<h3>reading</h3>
+</div>
+<div id="column1box"><img src="https://media.giphy.com/media/Svvb6KYEHjZoA/giphy.gif" style="height:117px;">
+<h3>sleeping</h3>
+</div>
+</center>
+</div>
+
+<div id="column2">
+<center><div id="column1box"><img src="https://i.giphy.com/X7ZjdT5MPwGgEIOqaD.gif" style="height:350px;">
+<h3>listening to music</h3>
+</div>
+<div id="column1box"><img src="https://i.pinimg.com/originals/53/15/2e/53152ec84419572a4adc10740b42690f.gif" style="height:248px;">
+<h3>eating</h3>
+</div>
+</center>
+ </div>
+</div>
+
+<div id="tab11" style="display:none">
+<h1>my distractions in life</h1>
+<br>
+I'm so very distracted by everything and anything mainly because I <i>don't</i> want to do my work, and I have yet to set my priorities straight due to my lack of sense of urgency. When I see something fun, I want to do it, and then when I see another thing that's fun, I'll do it too, until I end up cramming all the work I have to do, which is a pain, but such is the woe of life. I have a higher chance to be distracted by video games and books (not the academic variety, sadly) that I find myself too engrossed with them that hardly anything else matters. Yikes.
+<div id="column1">
+<center><div id="column1box"><img src="https://i.pinimg.com/564x/7d/95/51/7d955156a0a9fe769bb7ac807d3f5c61.jpg" style="height:214px;">
+<h3>playing fire emblem sksksksk</h3>
+</div>
+<div id="column1box"><img src="https://media.giphy.com/media/SVequkVXoTPlzou3ZC/giphy.gif" style="height:90px;">
+<h3>tamang bilyar lang</h3>
+</div>
+<div id="column1box"><img src="https://i.imgur.com/yoyN5U9.jpg" style="height:240px;">
+<h3>playing league smh</h3>
+</div>
+</center>
+</div>
+
+<div id="column2">
+<center><div id="column1box"><img src="https://i.imgur.com/07KHjd9.jpg" style="height:260px;">
+<h3>WRITING skskskssk</h3>
+</div>
+<div id="column1box"><img src="https://media.giphy.com/media/WoQJkq2dziOVG1yVpf/giphy.gif" style="height:90px;">
+<h3>partying and having fun
+</h3>
+</div>
+<div id="column1box"><img src="https://media.giphy.com/media/f6zIVrEcn0LdEzDYAQ/giphy.gif" style="height:194px;">
+<h3>cramming</h3>
+</div>
+</center>
+ </div>
+</div>
+
+<div id="tab12" style="display:none">
+<h1>my learning and insights about myself and my experiences</h1>
+<br>
+I've still got a lot to learn. I'm only in my teen years, after all, there's still a lot ahead of me. I've had a lot of bad experiences and then some good ones, which have helped shape me to become the person I am today. Admittedly, I still have a lot to learn about myself. I like to think that I'm a painting that's still in progress. I could be half-way finished, I could also still be a blank canvas waiting to get painted on.<br>
+<br>
+<img src="https://camo.githubusercontent.com/9be29021cfdb21b2cc257a3efcb269f64d42f5b6/687474703a2f2f32352e6d656469612e74756d626c722e636f6d2f63393961353739646233616530666331363462663463636131343838383564332f74756d626c725f6d6a6776386b45754d67317338376e37396f315f3430302e676966">
+</div>
+
+
+
+    
+<div id="itbeme">
+
+<center><div id="pictureko">
+<img src="https://i.imgur.com/qP6KFga.jpg?1">
+</div></center>
+
+<br><br><br>
+<h2>Frances Chua</h2>
+<img src="http://www.tourisme-hautvillers.com/media/picto_themes/ombre-theme_coup_de_coeur.png" style="width:234px;height:395px;">
+</div> 
+
+</body>  
+    
+    
 </html>
